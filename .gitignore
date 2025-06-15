@@ -1,0 +1,20 @@
+# Ignorar archivos del sistema
+.DS_Store
+
+# Carpetas comunes a ignorar
+data/
+tmp/
+lib/
+models/
+node_modules/
+*.log
+
+# Archivos grandes y de entorno
+*.tgz
+*.jar
+*.zip
+*.pem
+*.db
+*.bin
+*.parquet
+

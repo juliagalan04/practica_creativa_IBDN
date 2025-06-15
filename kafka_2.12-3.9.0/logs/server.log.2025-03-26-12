@@ -1,0 +1,4 @@
+[2025-03-26 12:05:44,658] INFO [NodeToControllerChannelManager id=1 name=registration] Node 1 disconnected. (org.apache.kafka.clients.NetworkClient)
+[2025-03-26 12:09:31,625] INFO [NodeToControllerChannelManager id=1 name=forwarding] Node 1 disconnected. (org.apache.kafka.clients.NetworkClient)
+[2025-03-26 12:55:44,802] INFO [SnapshotGenerator id=1] Creating new KRaft snapshot file snapshot 00000000000000007212-0000000001 because we have waited at least 60 minute(s). (org.apache.kafka.image.publisher.SnapshotGenerator)
+[2025-03-26 12:55:44,841] INFO [SnapshotEmitter id=1] Successfully wrote snapshot 00000000000000007212-0000000001 (org.apache.kafka.image.publisher.SnapshotEmitter)

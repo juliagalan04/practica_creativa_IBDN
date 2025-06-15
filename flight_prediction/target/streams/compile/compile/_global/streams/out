@@ -1,0 +1,10 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/juliagalan/practica_creativa/flight_prediction/src/main/scala/es/upm/dit/ging/predictor/MakePrediction.scala:158:1: unclosed comment[0m
+[0m[[0m[31merror[0m] [0m[0m/*[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/juliagalan/practica_creativa/flight_prediction/src/main/scala/es/upm/dit/ging/predictor/MakePrediction.scala:150:1: Missing closing brace `}' assumed here[0m
+[0m[[0m[31merror[0m] [0m[0m*/[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/juliagalan/practica_creativa/flight_prediction/src/main/scala/es/upm/dit/ging/predictor/MakePrediction.scala:151:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val hdfsStreamWriter = finalPredictions[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

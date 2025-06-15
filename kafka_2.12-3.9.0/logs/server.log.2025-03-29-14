@@ -1,0 +1,2 @@
+[2025-03-29 14:59:53,303] INFO [SnapshotGenerator id=1] Creating new KRaft snapshot file snapshot 00000000000000084987-0000000002 because we have waited at least 60 minute(s). (org.apache.kafka.image.publisher.SnapshotGenerator)
+[2025-03-29 14:59:53,330] INFO [SnapshotEmitter id=1] Successfully wrote snapshot 00000000000000084987-0000000002 (org.apache.kafka.image.publisher.SnapshotEmitter)

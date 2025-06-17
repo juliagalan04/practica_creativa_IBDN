@@ -512,18 +512,30 @@ def flight_delays_page_kafka():
 @app.route("/flights/delays/predict/classify_realtime/response/<unique_id>")
 def classify_flight_delays_realtime_response(unique_id):
   """Serves predictions to polling requestors"""
-  
-  prediction = client.agile_data_science.flight_delay_ml_response.find_one(
-    {
-      "UUID": unique_id
-    }
-  )
-  
+  prediction = None  
+
+  consumer = KafkaConsumer(
+      "flight-delay-ml-response",
+      bootstrap_servers=['kafka:9092'],
+      auto_offset_reset='earliest',
+      enable_auto_commit=False,
+      value_deserializer=lambda m: json.loads(m.decode('utf-8')),
+      consumer_timeout_ms=5000  
+    )
+
+  for msg in consumer:
+    data = msg.value
+    if data.get("UUID") == unique_id:
+      prediction = data
+      break
+
+  consumer.close()
+
   response = {"status": "WAIT", "id": unique_id}
   if prediction:
     response["status"] = "OK"
     response["prediction"] = prediction
-  
+
   return json_util.dumps(response)
 
 def shutdown_server():

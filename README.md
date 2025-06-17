@@ -76,6 +76,7 @@ Los componentes de nuestro flujo son:
 **ExecuteStreamCommand 1.25.0**: 
    - Command Path: /usr/bin/bash
    - Command Arguments: -c;cat >> /practica_creativa/nifi/mensajes.txt
+   - En el apartado de scheduling, establecemos run schedule 10 segundos
 
 Para verificar su funcionamiento:
 ```bash
